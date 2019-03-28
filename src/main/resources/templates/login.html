@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>登录</title>
+    <th:block th:replace="base/baseHead :: #initHead"></th:block><!-- 调用模板 -->
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="/script/login.js"></script>
+</head>
+<body>
+<div class="container">
+    <div class="row clearfix">
+        <div class="col-md-12 column">
+            <form role="form">
+                <div class="form-group">
+                    <label for="userName"></label>用户名<input type="text" class="form-control" id="userName" />
+                </div>
+                <div class="form-group">
+                    <label for="password">密码</label><input type="password" class="form-control" id="password" />
+                </div>
+                <button type="button" class="btn btn-default" id="login">Submit</button>
+            </form>
+        </div>
+    </div>
+</div></form>
+</body>
+</html>
